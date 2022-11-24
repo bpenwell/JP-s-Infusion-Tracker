@@ -15,6 +15,8 @@
 		A7165EA3292580050065E2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7165EA1292580050065E2A4 /* LaunchScreen.storyboard */; };
 		A7165EAE292580050065E2A4 /* Jp_s_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7165EAD292580050065E2A4 /* Jp_s_appTests.swift */; };
 		A7165EB9292580050065E2A4 /* Jp_s_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7165EB8292580050065E2A4 /* Jp_s_appUITests.swift */; };
+		A7165EC9292F11610065E2A4 /* IInfusionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7165EC8292F11610065E2A4 /* IInfusionData.swift */; };
+		A7165ECC292F14C60065E2A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7165ECB292F14C60065E2A4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A7165EB4292580050065E2A4 /* Jp's appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jp's appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7165EB8292580050065E2A4 /* Jp_s_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jp_s_appUITests.swift; sourceTree = "<group>"; };
 		A7165EBA292580050065E2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7165EC8292F11610065E2A4 /* IInfusionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IInfusionData.swift; sourceTree = "<group>"; };
+		A7165ECB292F14C60065E2A4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		A7165E95292580030065E2A4 /* Jp's app */ = {
 			isa = PBXGroup;
 			children = (
+				A7165ECA292F14B30065E2A4 /* Constants */,
+				A7165EC7292F10970065E2A4 /* Interfaces */,
 				A7165E96292580030065E2A4 /* AppDelegate.swift */,
 				A7165E98292580030065E2A4 /* SceneDelegate.swift */,
 				A7165E9A292580030065E2A4 /* ContentView.swift */,
@@ -134,6 +140,22 @@
 				A7165EBA292580050065E2A4 /* Info.plist */,
 			);
 			path = "Jp's appUITests";
+			sourceTree = "<group>";
+		};
+		A7165EC7292F10970065E2A4 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A7165EC8292F11610065E2A4 /* IInfusionData.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A7165ECA292F14B30065E2A4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A7165ECB292F14C60065E2A4 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7165ECC292F14C60065E2A4 /* Constants.swift in Sources */,
+				A7165EC9292F11610065E2A4 /* IInfusionData.swift in Sources */,
 				A7165E97292580030065E2A4 /* AppDelegate.swift in Sources */,
 				A7165E99292580030065E2A4 /* SceneDelegate.swift in Sources */,
 				A7165E9B292580030065E2A4 /* ContentView.swift in Sources */,
