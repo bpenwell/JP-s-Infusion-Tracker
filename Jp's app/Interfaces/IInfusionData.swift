@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct InfusionSite {
+struct InfusionSite: Identifiable {
     let name: String
     let id = UUID()
 }
