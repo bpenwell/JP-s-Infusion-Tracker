@@ -15,7 +15,7 @@ struct InfusionLogView: View {
     
     init(data: IInfusionData) {
         infusionData = data
-
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         formattedDate = dateFormatter.string(from: data.date)
@@ -24,15 +24,24 @@ struct InfusionLogView: View {
     var body: some View {
         VStack {
             Text(formattedDate)
-            List(InfusionSites) {
-                Text($0.name)
+            NavigationView{
+                List(InfusionSites) {
+                    Text($0.name)
+                }
+                .navigationTitle("Infusion Site:")
+            }
+            NavigationView{
+                List(EaseOfUses) {
+                    Text($0.name)
+                }
+                .navigationTitle("Ease of Use:")
             }
         }
     }
-}
-
-struct InfusionLogView_Previews: PreviewProvider {    
-    static var previews: some View {
-        InfusionLogView(data: InfusionLogTestData)
+    
+    struct InfusionLogView_Previews: PreviewProvider {
+        static var previews: some View {
+            InfusionLogView(data: InfusionLogTestData)
+        }
     }
 }

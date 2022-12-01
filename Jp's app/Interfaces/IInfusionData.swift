@@ -14,6 +14,11 @@ struct InfusionSite: Identifiable {
     let id = UUID()
 }
 
+struct EaseOfUse: Identifiable {
+    let name: String
+    let id = UUID()
+}
+
 struct IInfusionData {
     let date: Date
     let infusionSite: InfusionSite
