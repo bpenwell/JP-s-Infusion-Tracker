@@ -12,6 +12,7 @@ struct InfusionLogView: View {
     //gets current date
     private var infusionData: IInfusionData
     private var formattedDate: String
+    @State private var notes: String = ""
     
     init(data: IInfusionData) {
         infusionData = data
@@ -36,6 +37,7 @@ struct InfusionLogView: View {
                 }
                 .navigationTitle("Ease of Use:")
             }
+            TextField("Notes", text: $notes)
         }
     }
     
